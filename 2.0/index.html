@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modelador de Orçamento</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Modelador de Orçamento</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <form id="formulario">
+                <div>
+                    <label for="produto">Produto</label>
+                    <input type="text" id="produto" class='formControl' placeholder="Digite o produto aqui" required>
+                </div>
+                <div>
+                    <label for="descricao">Descrição</label>
+                    <input type="text" id="descricao" class="formControl" required>
+                </div>
+                <div>
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" id="quantidade" class="formNumbControl" required>
+                    <label for="valor">Valor</label>
+                    <input type="number" id="valor" type="number" class="formNumbControl" required>
+                </div>
+                <div>
+                    <button type="submit" class="inserir"
+                        onclick="inserir(produto.value,descricao.value,quantidade.value,valor.value)">Inserir</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <br><br>
+    <table id="tabela" class="tabela">
+        <thead>
+            <tr>
+                <th scope="col">Produto</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Valor</th>
+            </tr>
+            <tr>
+
+            </tr>
+        </thead>
+    </table>
+
+    <script src="tabela.js"></script>
+</body>
+
+</html>
